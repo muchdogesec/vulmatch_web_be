@@ -136,7 +136,7 @@ class OpenVulmatchProxyView(APIView):
             url = request.path
             path = url.split("proxy/open/")[1]
             # Modify the target URL as needed
-            target_url = f"{settings.VULMATCH_SERVICE_BASE_URL}api/v1/{path}"
+            target_url = f"{settings.VULMATCH_SERVICE_BASE_URL}/api/v1/{path}"
             if request.method != "GET":
                 raise MethodNotAllowed()
 
