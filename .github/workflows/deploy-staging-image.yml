@@ -54,7 +54,7 @@ jobs:
             STRIPE_LIVE_MODE=false
             STRIPE_PUBLIC_KEY=pk_test_51Qcr0ECt1MIuFH5xMktZTtsWz6JTuNU6oQfyG4wOBwba643O0LKaYoJo07FqHShKSowGCIuavOmwtpQXse5vpu6B00MLpIFfRt
             STRIPE_SECRET_KEY=${{ secrets.STRIPE_SECRET_KEY }}
-            DEFAULT_FROM_EMAIL=CTI Butler Staging <noreply@brevo.vulmatch.staging.signalscorps.com>
+            DEFAULT_FROM_EMAIL=Vulmatch Staging <noreply@brevo.vulmatch.staging.signalscorps.com>
             ARANGODB_PASSWORD=${{ secrets.ARANGODB_PASSWORD }}
       - name: Generate artifact attestation
         uses: actions/attest-build-provenance@v1

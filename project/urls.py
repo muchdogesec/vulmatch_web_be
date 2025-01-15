@@ -38,6 +38,7 @@ team_urlpatterns = [
 urlpatterns = [
     path("", RedirectView.as_view(url="/admin"), name='home'),
     path("admin/doc/", include("django.contrib.admindocs.urls")),
+    path("vulmatch_api/", include("vulmatch_api.urls")),
     # redirect Django admin login to main login page
     path("admin/login/", RedirectView.as_view(pattern_name="auth0_login")),
     path("admin/", admin.site.urls),

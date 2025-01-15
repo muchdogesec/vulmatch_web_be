@@ -87,6 +87,7 @@ PROJECT_APPS = [
     "apps.api",
     "apps.subscriptions",
     "apps.teams",
+    "vulmatch_api",
 ]
 
 INSTALLED_APPS = DJANGO_APPS + THIRD_PARTY_APPS + PROJECT_APPS
@@ -452,7 +453,7 @@ LOGGING = {
         },
         "vulmatch_be": {
             "handlers": ["console"],
-            "level": env("CITBUTLER_WEB_LOG_LEVEL", default="INFO"),
+            "level": env("VULMATCH_LOG_LEVEL", default="INFO"),
         },
     },
 }
