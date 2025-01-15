@@ -6,7 +6,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}_vulmatch_production
+  IMAGE_NAME: ${{ github.repository }}_vulmatch_web_production
 
 jobs:
   build-and-push-image:
