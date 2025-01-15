@@ -43,11 +43,11 @@ ENV SMTP_USERNAME=731598001@smtp-brevo.com
 ENV SMTP_SERVER=smtp-relay.brevo.com
 ENV SMTP_PORT=587
 ENV USE_SSL=TRUE
-ENV POSTGRES_USER=vulmatch_be
-ENV POSTGRES_DB=vulmatch_database
+ENV POSTGRES_USER=postgres
+ENV POSTGRES_DB=postgres
 ENV POSTGRES_HOST=host.docker.internal
 ENV POSTGRES_PORT=5432
-ENV ARANGODB_USERNAME=vulmatch_be
+ENV ARANGODB_USERNAME=vulmatch
 ENV ARANGODB_HOST_URL=http://host.docker.internal:8529
 # Set working directory
 WORKDIR /app
