@@ -6,6 +6,7 @@ from .schema import AdminSchemaView, SchemaView, AdminSwaggerView
 from .views import (
     VulmatchProxyView,
     AdminVulmatchProxyView,
+    OpenVulmatchProxyView,
 )
 
 urlpatterns = [
@@ -24,4 +25,7 @@ urlpatterns = [
         login_required(AdminSwaggerView.as_view(url="../schema-json")),
         name="swagger-ui",
     ),
+    path("proxy/open/cve/objects/", OpenVulmatchProxyView.as_view(), name=""),
+    path("proxy/open/cve/objects/<str:id>/bundle/", OpenVulmatchProxyView.as_view(), name=""),
+    path("proxy/open/cpe/objects/", OpenVulmatchProxyView.as_view(), name=""),
 ]
