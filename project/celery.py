@@ -19,4 +19,8 @@ app.config_from_object("django.conf:settings", namespace="CELERY")
 app.autodiscover_tasks()
 
 app.conf.beat_schedule = {
+    'download_cve': {
+        'task': 'vulmatch_api.tasks.cve_download_cron',
+        'schedule': crontab(hour=0, minute=0),
+    },
 }
